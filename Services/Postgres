@@ -1,0 +1,19 @@
+Default user: postgres
+
+Once you get access to this account you should be able to connect to the local PostgreSQL database by running psql.
+
+psql -U user -W
+
+Navigate the database using:
+
+\list to list the databases
+\c [DATABASE] to select the database [DATABASE]
+\d to list the tables
+
+SELECT * FROM table_name;
+
+------------------------------------------------HOW TO READ FILE------------------------------------------------------
+
+CREATE TABLE demo(t text);
+COPY demo from '/var/lib/postgresql/9.4/key.txt';
+SELECT * FROM demo;
